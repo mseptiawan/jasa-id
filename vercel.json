@@ -1,1 +1,15 @@
-{ "rewrites": [{ "source": "/(.*)", "dest": "/" }] }
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js", // Ganti dengan file entry point kamu
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "app.js" // Ganti dengan file entry point kamu
+    }
+  ]
+}
